@@ -160,21 +160,28 @@ p {
 }
 
 .title {
+    align-items: center;
     text-align: center;
+    vertical-align: baseline;
     background-color: cadetblue;
     padding-top: 50px;
     padding-bottom: 80px;
-}
 
+
+}
 
 .header {
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
-@media screen and (min-width: 960px) {
-    .title img {
-        display: flex;
+image {
+    flex: 1;
+}
+
+@media screen and (min-width:960px) {
+    .header {
         flex-direction: row;
     }
 }
