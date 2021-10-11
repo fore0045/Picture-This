@@ -176,23 +176,25 @@ img {
     width: 100%;
 }
 
+/* Media Query 960 px and above */
 @media screen and (min-width:960px) {
 
     .header {
         flex-direction: row;
         flex-basis: 50%;
-        /* flex-grow: 1; */
     }
 
     .title {
         padding: 150px 50px;
     }
 
+    /* Both items take equal space */
     picture,
     .title {
         flex: 1;
     }
 
+    /* Fixes small difference between the img and text box */
     .title {
         margin-bottom: .15em;
     }
