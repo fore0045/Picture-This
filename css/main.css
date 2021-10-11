@@ -133,6 +133,7 @@ table {
 ---------------------------------------------------------------*/
 html {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 *,
@@ -160,28 +161,41 @@ p {
 }
 
 .title {
-    align-items: center;
     text-align: center;
-    vertical-align: baseline;
     background-color: cadetblue;
-    padding-top: 50px;
-    padding-bottom: 80px;
-
+    padding: 50px 25px;
 
 }
 
 .header {
     display: flex;
-    flex: 1;
     flex-direction: column;
 }
 
-image {
-    flex: 1;
+img {
+    width: 100%;
 }
 
 @media screen and (min-width:960px) {
+
     .header {
         flex-direction: row;
+        flex-basis: 50%;
+        /* flex-grow: 1; */
     }
+
+    .title {
+        padding: 150px 50px;
+    }
+
+    picture,
+    .title {
+        flex: 1;
+    }
+
+    .title {
+        margin-bottom: .15em;
+    }
+
+
 }
